@@ -25,7 +25,8 @@ header {
   height: 67px;
 }
 
-header > img {
+header > img,
+footer > img {
   max-width: 236px;
 }
 
@@ -127,4 +128,29 @@ li > h2 {
 
 .productInfo > img {
   cursor: pointer;
+}
+
+footer {
+  background-color: #5300c8;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoFooter {
+  text-align: center;
+  color: #fff;
+  line-height: 16px;
+  font-size: 16px;
+  display: grid;
+  gap: 15px;
+}
+
+.infoFooter > p {
+  font-weight: 400;
+}
+
+.infoFooter > span {
+  font-weight: 200;
 }
