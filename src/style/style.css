@@ -38,6 +38,8 @@ section {
 
 main {
   padding: 0px 10px;
+  display: grid;
+  gap: 50px;
 }
 
 section > h1 {
@@ -91,4 +93,38 @@ form input[type="text"]::placeholder {
 .buttonsForm > button:last-child {
   background-color: transparent;
   color: #03318c;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px 5px;
+  justify-content: center;
+}
+
+li {
+  background-color: #5d04d9;
+  padding: 10px;
+  border: 3px solid #000;
+  border-radius: 7px;
+  color: #fff;
+  display: grid;
+  gap: 10px;
+  box-shadow: -6px 8px 4px -3px rgba(0, 0, 0, 0.295);
+}
+
+li > h2 {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19.5px;
+}
+.productInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.productInfo > img {
+  cursor: pointer;
 }
