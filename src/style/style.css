@@ -5,6 +5,15 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 header {
@@ -18,4 +27,68 @@ header {
 
 header > img {
   max-width: 236px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+main {
+  padding: 0px 10px;
+}
+
+section > h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  max-width: 350px;
+  text-align: center;
+  line-height: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0px 20px;
+  gap: 30px;
+}
+
+form input[type="text"] {
+  border: 3px solid #03318c;
+  border-radius: 30px;
+  padding: 10px;
+  height: 58px;
+  font-size: 16px;
+}
+
+form input[type="text"]::placeholder {
+  color: #03318c;
+}
+
+.buttonsForm {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.buttonsForm > button {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: #03318c;
+  color: #fff;
+  border: 3px solid #03318c;
+}
+
+.buttonsForm > button:last-child {
+  background-color: transparent;
+  color: #03318c;
 }
