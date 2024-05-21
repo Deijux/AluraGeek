@@ -37,10 +37,18 @@ section {
   gap: 30px;
 }
 
+.formProduct {
+  max-width: 472px;
+  width: 100%;
+}
+
 main {
+  display: flex;
   padding: 0px 10px;
-  display: grid;
-  gap: 50px;
+  flex-flow: row-reverse wrap;
+  gap: 70px;
+  align-content: center;
+  justify-content: center;
 }
 
 section > h1 {
@@ -120,6 +128,11 @@ li > h2 {
   font-size: 15px;
   line-height: 19.5px;
 }
+
+.products {
+  max-width: 640px;
+}
+
 .productInfo {
   display: flex;
   flex-direction: row;
@@ -153,4 +166,10 @@ footer {
 
 .infoFooter > span {
   font-weight: 200;
+}
+
+@media (min-height: 865px) and (orientation: landscape) {
+  body {
+    gap: 10vh;
+  }
 }
