@@ -83,7 +83,7 @@ form input[type="text"]::placeholder {
 .buttonsForm {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -97,6 +97,12 @@ form input[type="text"]::placeholder {
   background-color: #03318c;
   color: #fff;
   border: 3px solid #03318c;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.buttonsForm > button:hover {
+  transform: scale(1.1);
 }
 
 .buttonsForm > button:last-child {
