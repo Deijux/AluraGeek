@@ -15,7 +15,7 @@
     <main>
         <section class="formProduct">
             <h1>AGREGAR PRODUCTO:</h1>
-            <form action="#">
+            <form id="form" action="#">
                 <input type="text" name="nombre" id="nombre" placeholder="Nombre...">
                 <input type="text" name="precio" id="precio" placeholder="Precio...">
                 <input type="text" name="imagen" id="imagen" placeholder="Imagen...">
@@ -28,39 +28,7 @@
 
         <section class="products">
             <h1>MIS PRODUCTOS:</h1>
-            <ul>
-                <li>
-                    <img src="./assets/stormtrooper.png" alt="stormtrooper image">
-                    <h2>Stormtrooper</h2>
-                    <div class="productInfo">
-                        <p>$ 60,00</p>
-                        <img src="./assets/trashIcon.png" alt="trash Icon">
-                    </div>
-                </li>
-                <li>
-                    <img src="./assets/gameBoyClasic.png" alt="stormtrooper image">
-                    <h2>Stormtrooper</h2>
-                    <div class="productInfo">
-                        <p>$ 60,00</p>
-                        <img src="./assets/trashIcon.png" alt="trash Icon">
-                    </div>
-                </li>
-                <li>
-                    <img src="./assets/stormtrooper.png" alt="stormtrooper image">
-                    <h2>Stormtrooper</h2>
-                    <div class="productInfo">
-                        <p>$ 60,00</p>
-                        <img src="./assets/trashIcon.png" alt="trash Icon">
-                    </div>
-                </li>
-                <li>
-                    <img src="./assets/gameBoyClasic.png" alt="stormtrooper image">
-                    <h2>Stormtrooper</h2>
-                    <div class="productInfo">
-                        <p>$ 60,00</p>
-                        <img src="./assets/trashIcon.png" alt="trash Icon">
-                    </div>
-                </li>
+            <ul id="listProducts">
             </ul>
         </section>
     </main>
@@ -71,7 +39,7 @@
             <span>ALURA LATAM - 2024</span>
         </div>
     </footer>
-    <script src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/main.js"></script>
 </body>
 
 </html>
