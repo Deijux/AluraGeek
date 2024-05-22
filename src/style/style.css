@@ -110,6 +110,7 @@ ul {
   flex-wrap: wrap;
   gap: 15px 5px;
   justify-content: center;
+  overflow-y: auto;
 }
 
 li {
@@ -129,6 +130,14 @@ li > h2 {
   line-height: 19.5px;
 }
 
+li > img {
+  width: 176px;
+  height: 174px;
+  border: 4px solid black;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
 .products {
   max-width: 640px;
 }
@@ -141,6 +150,11 @@ li > h2 {
 
 .productInfo > img {
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.productInfo > img:hover {
+  transform: scale(1.2);
 }
 
 footer {
@@ -171,5 +185,11 @@ footer {
 @media (min-height: 865px) and (orientation: landscape) {
   body {
     gap: 10vh;
+  }
+}
+
+@media (orientation: landscape) {
+  ul {
+    max-height: 821px;
   }
 }
